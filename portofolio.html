@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri MieKu Express - Koleksi Menu Kami</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <!-- ... (same navigation code) ... -->
+    </nav>
+
+    <!-- Gallery Filter Section -->
+    <section class="gallery-section">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="bestseller">Best Seller</button>
+            <button class="filter-btn" data-filter="pedas">Menu Pedas</button>
+            <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="bestseller">
+                <a href="images/gallery/mie-goreng-special-large.jpg" data-lightbox="gallery" data-title="Mie Goreng Special">
+                    <img src="images/gallery/mie-goreng-special-thumb.jpg" alt="Mie Goreng Special">
+                    <div class="item-overlay">
+                        <h3>Mie Goreng Special</h3>
+                        <p>⭐ 4.9/5 (500+ reviews)</p>
+                    </div>
+                </a>
+                <div class="project-details">
+                    <div class="customer-review">
+                        <img src="images/customers/customer1.jpg" alt="Customer">
+                        <blockquote>"Mie terenak yang pernah saya coba!"</blockquote>
+                        <cite>- Ahmad S.</cite>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more gallery items -->
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... (same footer code) ... -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

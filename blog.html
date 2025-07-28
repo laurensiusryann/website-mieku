@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog MieKu Express - Berita & Artikel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <!-- ... (same navigation code) ... -->
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+        <div class="header-content">
+            <h1>Blog MieKu Express</h1>
+            <p>Temukan artikel menarik seputar kuliner dan tips sehat</p>
+        </div>
+    </header>
+
+    <!-- Blog Search and Filter -->
+    <section class="blog-controls">
+        <div class="search-bar">
+            <input type="text" id="blog-search" placeholder="Cari artikel...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="category-filter">
+            <select id="category-select">
+                <option value="all">Semua Kategori</option>
+                <option value="kuliner">Kuliner</option>
+                <option value="resep">Resep</option>
+                <option value="kesehatan">Kesehatan</option>
+                <option value="tips">Tips & Trik</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid">
+        <!-- Blog Post -->
+        <article class="blog-post" data-category="kuliner">
+            <div class="post-image">
+                <img src="images/blog/mie-pedas.jpg" alt="Mie Pedas">
+                <span class="reading-time">
+                    <i class="far fa-clock"></i>
+                    <span class="time">5 min read</span>
+                </span>
+            </div>
+            <div class="post-content">
+                <div class="post-meta">
+                    <span class="category">Kuliner</span>
+                    <span class="date">28 Juli 2025</span>
+                </div>
+                <h2>Rahasia di Balik Kelezatan Mie Pedas</h2>
+                <p>Menguak rahasia cita rasa mie pedas yang membuat ketagihan...</p>
+                <div class="post-footer">
+                    <a href="#" class="read-more">Baca Selengkapnya</a>
+                    <div class="share-buttons">
+                        <button class="share-btn" data-platform="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button class="share-btn" data-platform="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="share-btn" data-platform="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- More blog posts with different categories -->
+        <article class="blog-post" data-category="kesehatan">
+            <!-- Similar structure for other posts -->
+        </article>
+    </section>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <button class="prev-page" disabled><i class="fas fa-chevron-left"></i></button>
+        <div class="page-numbers">
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+        </div>
+        <button class="next-page"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Popular Tags -->
+    <section class="tags-section">
+        <h3>Popular Tags</h3>
+        <div class="tags-cloud">
+            <a href="#" class="tag">Mie Pedas</a>
+            <a href="#" class="tag">Kuliner Surabaya</a>
+            <a href="#" class="tag">Tips Sehat</a>
+            <a href="#" class="tag">Resep</a>
+            <a href="#" class="tag">Food Photography</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... (same footer code) ... -->
+    </footer>
+
+    <script src="js/blog.js"></script>
+</body>
+</html>

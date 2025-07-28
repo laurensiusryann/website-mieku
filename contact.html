@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi MieKu Express - Kontak Kami</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <!-- ... (same navigation code) ... -->
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Hubungi Kami</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Lokasi</h3>
+                        <p>Jl. Raya Darmo No. 123, Surabaya</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Telepon</h3>
+                        <p>+62 31 5555 6666</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@miekuexpress.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Nama Lengkap</label>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" required>
+                    <label for="phone">Nomor Telepon</label>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Pesan</label>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div id="map"></div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Pertanyaan yang Sering Diajukan</h2>
+        <div class="faq-search">
+            <input type="text" id="faq-search" placeholder="Cari pertanyaan...">
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Berapa lama waktu pengiriman?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Waktu pengiriman rata-rata 30 menit, tergantung jarak dan kondisi lalu lintas.
+                </div>
+            </div>
+            <!-- Add more FAQ items -->
+        </div>
+    </section>
+
+    <!-- Live Chat Widget -->
+    <div id="live-chat" class="live-chat">
+        <div class="chat-header">
+            <h3>Live Chat</h3>
+            <button id="toggle-chat">
+                <i class="fas fa-comments"></i>
+            </button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Ketik pesan...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... (same footer code) ... -->
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

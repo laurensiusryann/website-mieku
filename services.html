@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu MieKu Express - Pilihan Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <!-- ... (same navigation code) ... -->
+    </nav>
+
+    <!-- Menu Filter Section -->
+    <section class="menu-section">
+        <div class="filter-container">
+            <button class="filter-btn active" data-category="all">Semua</button>
+            <button class="filter-btn" data-category="mie-goreng">Mie Goreng</button>
+            <button class="filter-btn" data-category="mie-kuah">Mie Kuah</button>
+            <button class="filter-btn" data-category="spesial">Spesial</button>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Menu Items -->
+            <div class="menu-item" data-category="mie-goreng">
+                <img src="images/menu/mie-goreng-pedas.jpg" alt="Mie Goreng Pedas">
+                <h3>Mie Goreng Pedas</h3>
+                <p class="description">Mie goreng dengan campuran cabai pilihan</p>
+                <p class="price">Rp 25.000</p>
+                <button class="order-btn">Pesan Sekarang</button>
+            </div>
+            <!-- Add more menu items -->
+        </div>
+    </section>
+
+    <!-- Package Comparison -->
+    <section class="package-comparison">
+        <h2>Paket Hemat</h2>
+        <div class="comparison-table">
+            <div class="package-column">
+                <h3>Paket Personal</h3>
+                <p class="price">Rp 35.000</p>
+                <ul>
+                    <li>1 Porsi Mie</li>
+                    <li>1 Minuman</li>
+                    <li>1 Snack</li>
+                </ul>
+                <button class="order-btn">Pilih Paket</button>
+            </div>
+            <!-- Add more package columns -->
+        </div>
+    </section>
+
+    <!-- Customization Form -->
+    <section class="customization-form">
+        <h2>Sesuaikan Pesanan Anda</h2>
+        <form id="custom-order-form">
+            <div class="form-group">
+                <label>Pilih Base Mie:</label>
+                <select name="base" required>
+                    <option value="">Pilih Jenis Mie</option>
+                    <option value="regular">Mie Regular</option>
+                    <option value="tipis">Mie Tipis</option>
+                    <option value="tebal">Mie Tebal</option>
+                </select>
+            </div>
+            <!-- Add more customization options -->
+            <button type="submit" class="submit-btn">Buat Pesanan</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... (same footer code) ... -->
+    </footer>
+
+    <script src="js/services.js"></script>
+</body>
+</html>
